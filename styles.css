@@ -11,17 +11,20 @@
     --regal-navy: #003566ff;
     --school-bus-yellow: #ffc300ff;
     --gold: #ffd60aff;
+    --trans:  rgba(0, 53, 102, 0.521);
+    --trans-2: rgba(0, 8, 20, 0.692);
+    --trans-3: rgba(0, 53, 102, 0.507);
 }
 
 
 header {
-    background-color: var(--regal-navy);
+    background-color: var(--trans);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     margin-bottom: 0 auto;
-    padding: 20px;
+    padding: 15px;
 }
 
 
@@ -44,7 +47,7 @@ nav ul a {
     background: rgba(255, 255, 255, 0.15);
 }
 
-nav ul a :hover {
+nav ul a:hover {
     transform: 10px;
     box-shadow: 0 5px 15px;
 }
@@ -97,7 +100,7 @@ h2 {
 .container {
     width: 700px;
     height: 300px;
-    background: var(--regal-navy);
+    background: var(--trans-3);
     text-align: center;
     padding: 20px;
     justify-content: center;
@@ -106,7 +109,6 @@ h2 {
     margin: 5px auto;
     margin-bottom: 20px;
     overflow: hidden;
-
 }
 
 img {
@@ -121,12 +123,15 @@ img {
     height: 200px;
     margin: 10px auto;
     border-radius: 15px;
-    background: rgb(0, 0, 0);
+    background: var(--trans-2);
     box-shadow: 0 0 20px rgba(red, green, blue, 0);
     transition: transform 0.5s, box-shadow 0.5s;
-    color: rgb(130, 108, 255);
- 
-   
+    color: var(--gold);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px;
 }
 
 .cartas-contenedor{
@@ -136,10 +141,15 @@ img {
 footer {
     width: 100%;
     text-align: center;
-    background-color: var(--regal-navy);
+    font-size: 5px;
+    background-color: var(--trans);
     padding: 20px;
     margin-top: 30px;
 
+}
+
+.down {
+    font-size: 12px;
 }
 
 
