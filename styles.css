@@ -12,7 +12,7 @@
     --school-bus-yellow: #ffc300ff;
     --gold: #ffd60aff;
     --trans:  rgba(0, 53, 102, 0.521);
-    --trans-2: rgba(0, 8, 20, 0.692);
+    --trans-2: rgba(12, 44, 92, 0.692);
     --trans-3: rgba(0, 53, 102, 0.507);
     --pets: rgba(255, 192, 203, 0.651);
 }
@@ -38,6 +38,13 @@ header {
     padding: 15px;
 }
 
+nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
 
 nav ul {
     list-style: none;
@@ -64,6 +71,8 @@ nav ul a:hover {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background: var(--ink-black);
     background:
     linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.452)), 
@@ -72,14 +81,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    margin: 0;
+    min-height: 100vh;
 }
 
-nav {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 10px;
+main {
+    flex: 1;
 }
 
 .logo {
@@ -95,9 +102,9 @@ nav {
 p {
     font-size: 18px;
     letter-spacing: 2px;
-    margin: 12px;
+    margin: 0;
+    padding: 10px;
     color: var(--gold);
-
 }
 
 h2 {
@@ -123,16 +130,18 @@ h2 {
 }
 
 img {
+    display: block;
     width: 100px;
-    margin-top: 2rem;
+    margin: 2rem;
 }
 
 .card {
     display: flex;
     justify-content: center;
-    width: 600px;
-    height: 200px;
-    margin: 10px auto;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    margin: auto;
     border-radius: 15px;
     background: var(--trans-2);
     box-shadow: 0 0 20px rgba(red, green, blue, 0);
@@ -140,9 +149,16 @@ img {
     color: var(--gold);
 }
 
+.cartas-contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px;
+    transition: all 1s ease-in-out;
+    border-radius: 40%;
 }
 
 .card-pets {
@@ -163,16 +179,12 @@ img {
     box-shadow: 0 15px 25px;
 }
 
-.cartas-contenedor{
-    display: flex;
-}
-
 footer {
     width: 100%;
     text-align: center;
     font-size: 5px;
     background-color: var(--trans);
-    padding: 20px;
+    padding: 0;
     margin-top: 30px;
 }
 
@@ -181,16 +193,16 @@ footer {
     text-align: center;
     font-size: 5px;
     background-color: var(--pets);
-    padding: 20px;
+    padding: 0;
     margin-top: 30px;
 }
 
 
-
 .down {
     font-size: 12px;
+    display: grid;
 }
 
-
+@media 
 
 
