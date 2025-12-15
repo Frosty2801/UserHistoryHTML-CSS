@@ -130,6 +130,10 @@ h2 {
     overflow: hidden;
 }
 
+.button {
+    background: var(--gold);
+}
+
 img {
     display: block;
     width: 100px;
