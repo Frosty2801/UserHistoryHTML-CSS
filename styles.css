@@ -17,19 +17,8 @@
     --pets: rgba(255, 192, 203, 0.651);
 }
 
-
 header {
     background-color: var(--trans);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    margin-bottom: 0 auto;
-    padding: 15px;
-}
-
-.header-pets {
-    background-color: var(--pets);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,7 +65,7 @@ body {
     background: var(--ink-black);
     background:
     linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.452)), 
-    url(images/deepblue.jpg) ;
+    url(images/deepblue2.jpg) ;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -166,24 +155,6 @@ img {
     border-radius: 40%;
 }
 
-.card-pets {
-    display: flex;
-    justify-content: center;
-    width: 600px;
-    height: 300px;
-    margin: 12px auto;
-    border-radius: 15px;
-    background: var(--pets);
-    box-shadow: 0 0 20px rgba(red, green, blue, 0);
-    transition: transform 0.5s, box-shadow 0.5s;
-    color: var(--gold);
-}
-
-.card-pets:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px;
-}
-
 footer {
     width: 100%;
     text-align: center;
@@ -192,17 +163,6 @@ footer {
     padding: 0;
     margin-top: 30px;
 }
-
-.footer-pets {
-    width: 100%;
-    text-align: center;
-    font-size: 5px;
-    background-color: var(--pets);
-    padding: 0;
-    margin-top: 30px;
-}
-
-
 .down {
     font-size: 12px;
     display: grid;
@@ -234,7 +194,7 @@ footer {
 
 @media (max-width: 480px) {
 
-    header, .header-pets {
+    header {
         flex-direction: column;
         width: 100%;
         height: auto;
